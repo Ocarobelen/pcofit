@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PCOFit - Soluciones Tecnológicas & Comercio Global</title>
+    <title>PCOFit - Soluciones Integrales de Salud & Bienestar</title>
     <style>
         :root {
-            --primary-color: #2D5A53;
-            --accent-color: #4A8C82;
+            --primary-color: #4A8C82;
+            --secondary-color: #2D5A53;
             --bg-light: #F8FAF9;
             --text-main: #2C3E50;
             --text-muted: #6B7C93;
@@ -31,75 +31,59 @@
             background-color: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.05);
             padding: 1.5rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
+            text-align: center;
         }
 
         .logo {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
             font-weight: 700;
             color: var(--primary-color);
             letter-spacing: 1px;
         }
 
-        .nav-links {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
         .hero {
-            padding: 5rem 2rem;
+            padding: 4rem 2rem;
             text-align: center;
-            background: linear-gradient(135deg, rgba(74,140,130,0.08) 0%, rgba(248,250,249,1) 100%);
+            background: linear-gradient(135deg, rgba(74,140,130,0.1) 0%, rgba(248,250,249,1) 100%);
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .hero h1 {
             font-size: 2.5rem;
-            color: var(--primary-color);
+            color: var(--secondary-color);
             margin-bottom: 1rem;
         }
 
         .hero p {
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             color: var(--text-muted);
-            max-width: 750px;
+            max-width: 700px;
             margin: 0 auto 2rem auto;
         }
 
-        .container {
+        .features {
             max-width: 1100px;
-            margin: 4rem auto;
+            margin: 2rem auto 4rem auto;
             padding: 0 1.5rem;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            color: var(--primary-color);
-            margin-bottom: 3rem;
-        }
-
-        .grid-3 {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
 
         .card {
             background: var(--white);
-            padding: 2.5rem 2rem;
+            padding: 2.5rem 1.5rem;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            border-top: 4px solid var(--accent-color);
+            text-align: center;
+            border-top: 4px solid var(--primary-color);
         }
 
         .card h3 {
-            color: var(--primary-color);
+            color: var(--secondary-color);
             margin-bottom: 1rem;
-            font-size: 1.25rem;
+            font-size: 1.3rem;
         }
 
         .card p {
@@ -107,66 +91,38 @@
             font-size: 0.95rem;
         }
 
-        .about-section {
-            background: var(--white);
-            padding: 4rem 2rem;
-            margin: 4rem 0;
-            border-top: 1px solid #E2E8F0;
-            border-bottom: 1px solid #E2E8F0;
-        }
-
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .about-content h2 {
-            color: var(--primary-color);
-            margin-bottom: 1rem;
-        }
-
-        .about-content p {
-            color: var(--text-muted);
-            font-size: 1rem;
-            margin-bottom: 1.5rem;
-        }
-
         footer {
-            background-color: var(--primary-color);
+            background-color: var(--secondary-color);
             color: var(--white);
             padding: 3rem 2rem 2rem 2rem;
             text-align: center;
             font-size: 0.9rem;
         }
 
-        .footer-grid {
-            max-width: 900px;
+        .footer-info {
+            max-width: 800px;
             margin: 0 auto 2rem auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 2rem;
-            text-align: left;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
         }
 
-        .footer-grid h4 {
-            color: #A3D9D1;
-            margin-bottom: 0.8rem;
-            font-size: 0.95rem;
+        .footer-info h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
-        .footer-grid p {
+        .footer-info p {
             color: #E2E8F0;
-            font-size: 0.9rem;
         }
 
         .copyright {
-            border-top: 1px solid rgba(255,255,255,0.15);
+            border-top: 1px solid rgba(255,255,255,0.1);
             padding-top: 1.5rem;
-            color: #CBD5E0;
-            font-size: 0.85rem;
+            color: #A0AEC0;
         }
     </style>
 </head>
@@ -174,57 +130,46 @@
 
     <header>
         <div class="logo">PCOFIT</div>
-        <div class="nav-links">Soluciones & Operaciones Globales</div>
     </header>
 
     <section class="hero">
-        <h1>Innovación, Tecnología y Comercio Global</h1>
-        <p>Impulsamos operaciones comerciales y desarrollamos infraestructura digital orientada a la eficiencia y el crecimiento corporativo sostenido.</p>
+        <h1>Salud Corporal e Integral</h1>
+        <p>Desarrollamos e impulsamos soluciones innovadoras orientadas al bienestar, la nutrición y el cuidado integral de la salud.</p>
     </section>
 
-    <div class="container">
-        <h2 class="section-title">Nuestras Áreas de Negocio</h2>
-        <div class="grid-3">
-            <div class="card">
-                <h3>Servicios Tecnológicos</h3>
-                <p>Desarrollo de soluciones digitales, arquitectura web y optimización de plataformas de software para la gestión comercial y automatización de procesos.</p>
-            </div>
-            <div class="card">
-                <h3>Comercio & Distribución</h3>
-                <p>Gestión estratégica, compra y comercialización de bienes de consumo, líneas especializadas y productos orientados al bienestar general.</p>
-            </div>
-            <div class="card">
-                <h3>Consultoría Operativa</h3>
-                <p>Asesoramiento integral enfocado en la estructuración de proyectos digitales, canales de venta online y optimización de cadenas de suministro.</p>
-            </div>
+    <section class="features">
+        <div class="card">
+            <h3>Suplementación Premium</h3>
+            <p>Formulaciones enfocadas en optimizar el rendimiento físico, la vitalidad y el equilibrio nutricional diario.</p>
         </div>
-    </div>
-
-    <section class="about-section">
-        <div class="about-content">
-            <h2>Compromiso Corporativo</h2>
-            <p>Operamos bajo altos estándares de transparencia y cumplimiento regulatorio internacional. Nuestra estructura diversificada nos permite adaptarnos ágilmente a los requerimientos del mercado digital y tecnológico actual.</p>
+        <div class="card">
+            <h3>Bienestar Integral</h3>
+            <p>Enfoque holístico pensado para el cuidado corporal, energía y la mejora sostenida en la calidad de vida.</p>
+        </div>
+        <div class="card">
+            <h3>Calidad Garantizada</h3>
+            <p>Compromiso con altos estándares de formulación y distribución corporativa transparente.</p>
         </div>
     </section>
 
     <footer>
-        <div class="footer-grid">
+        <div class="footer-info">
             <div>
-                <h4>Entidad Legal</h4>
+                <h4>Organización</h4>
                 <p>Norte Corp LLC</p>
             </div>
             <div>
-                <h4>Contacto Comercial</h4>
+                <h4>Contacto Corporativo</h4>
                 <p>contact@pcofit.com</p>
             </div>
             <div>
-                <h4>Registro Fiscal</h4>
+                <h4>Ubicación Fiscal</h4>
                 <p>Florida, United States</p>
             </div>
         </div>
 
         <div class="copyright">
-            <p>© 2026 Norte Corp LLC. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Norte Corp LLC. Todos los derechos reservados.</p>
         </div>
     </footer>
 
